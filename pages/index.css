@@ -1,0 +1,209 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+
+body {
+  background-color: #2a2c2f;
+}
+
+.page {
+  background-color: #2a2c2f;
+  font-family: "Inter Black";
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.imagem__logo {
+  width: 30px;
+  height: 30px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 34px;
+  margin-bottom: 90px;
+}
+
+.nav__title {
+  color: #FFFFFF;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 92px;
+
+}
+
+.header__title {
+  font-family: "Inter Black";
+  font-size: 96px;
+  line-height: 100px;
+  color: #FFFFFF;
+  width: 793px;
+  height: 200px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.header__subtitle {
+  width: 720px;
+  height: 72px;
+  margin-left: 132px;
+  margin-right: 132px;
+  margin-bottom: 64px;
+  font-family: "Inter Regular";
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.header__image {
+  width: 984px;
+  height: 615px;
+}
+
+.intro {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 830px;
+  height: 482px;
+  margin-left: 148px;
+  margin-bottom: 118px;
+}
+
+.intro__title {
+  font-family: "Inter Black";
+  font-size: 54px;
+  line-weight: 58px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.intro__figure {
+  font-family: "Inter Regular";
+  font-size: 24px;
+  line-weight: 34px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.intro__blockquote {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.intro__figcaption {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 32px;
+}
+
+.intro__text {
+  font-family: "Inter Regular";
+  font-size: 16px;
+  line-weight: 16.3%;
+  margin: 0;
+}
+
+.galery {
+  width: 1184px;
+  height: 442px;
+  margin: 0 auto;
+  margin-bottom: 92px;
+}
+
+.galery__image {
+  width: 284px;
+  height: 213px;
+}
+
+.citys {
+  margin-left: 145px;
+  margin-right: 148px;
+}
+
+.city {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 48px;
+  column-gap: 40px;
+}
+
+.city__image {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+}
+
+.city__name {
+  font-family: "Inter Black";
+  font-size: 72px;
+  line-height: 76px;
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.city__image {
+  width: 460px;
+  height: 460px;
+}
+
+.city__name {
+  color: #FFFFFF;
+  font-family: "Inter Black";
+  font-size: 72px;
+  line-height: 76px;
+  margin: 0;
+}
+
+.card__artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.city__artist {
+  font-family: "Inter Regular";
+  font-size: 12px;
+  letter-spacing: 12%;
+  color: #AAAAAA;
+  margin: 0;
+}
+
+.city__artist-name {
+  font-family: "Inter Regular";
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.city__text {
+  font-family: "Inter Regular";
+  font-size: 18px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.citys__button {
+  display: flex;
+  flex-direction: column;
+}
+
+.city__button {
+  background-color: #0278FE;
+  color: #FFFFFF;
+  font-family: "Inter SemiBold";
+  font-size: 18px;
+  border-radius: 5%;
+  height: min-content;
+}
