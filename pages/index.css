@@ -8,7 +8,7 @@ body {
 .page {
   background-color: #2a2c2f;
   font-family: "Inter Black";
-  max-width: 1280px;
+  width: 1280px;
   margin: 0 auto;
 }
 
@@ -118,6 +118,13 @@ body {
   margin-bottom: 92px;
 }
 
+.galery__images {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
 .galery__image {
   width: 284px;
   height: 213px;
@@ -131,15 +138,14 @@ body {
 .city {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   row-gap: 48px;
   column-gap: 40px;
-}
-
-.city__image {
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 1;
+  grid-template-areas:
+  "city__name    card__artist"
+  "city__image   citys__text"
+  "citys__button citys__text"
+  "span          citys__text"
+  ;
 }
 
 .city__name {
@@ -155,6 +161,7 @@ body {
 .city__image {
   width: 460px;
   height: 460px;
+  grid-area: city__image;
 }
 
 .city__name {
@@ -163,12 +170,14 @@ body {
   font-size: 72px;
   line-height: 76px;
   margin: 0;
+  grid-area: city__name;
 }
 
 .card__artist {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  grid-area: card__artist;
 }
 
 .city__artist {
@@ -187,16 +196,29 @@ body {
   margin: 0;
 }
 
+.citys__text {
+  grid-area: citys__text;
+
+}
+
 .city__text {
   font-family: "Inter Regular";
   font-size: 18px;
   color: #FFFFFF;
   margin: 0;
+  width: 484px;
+  margin-bottom: 25px;
+  line-height: 163%;
+}
+
+.city__text:last-of-type {
+  margin-bottom: 0;
 }
 
 .citys__button {
   display: flex;
   flex-direction: column;
+  grid-area: citys__button;
 }
 
 .city__button {
@@ -204,6 +226,81 @@ body {
   color: #FFFFFF;
   font-family: "Inter SemiBold";
   font-size: 18px;
-  border-radius: 5%;
-  height: min-content;
+  border-radius: 5px;
+  height: 48px;
+  width: 285px;
+  border: none;
+}
+
+.about {
+  background-image: url(../images/background.jpg);
+  height: 740px;
+  width: 1184px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  justify-content: center;}
+
+.about__title {
+  font-family: "Inter Black";
+  font-size: 72px;
+  line-height: 76px;
+  color: white;
+}
+
+.about__list {
+  list-style: none;
+  list-style-type: none;
+  font-family: "Inter Regular";
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  padding: 0;
+}
+
+.about__button {
+  width: 191px;
+  height: 48px;
+  background-color: #0278FE;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copyright {
+  margin-top: 92px;
+  color: white;
+  font-family: "Inter Regular";
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__image {
+    width: 100%;
+  }
+
+  .galery__images {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+   
+  }
+
+  .main {
+
+  }
+
+  .about {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover ;
+  }
 }
