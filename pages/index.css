@@ -8,7 +8,6 @@ body {
 .page {
   background-color: #2a2c2f;
   font-family: "Inter Black";
-  width: 1280px;
   margin: 0 auto;
 }
 
@@ -66,6 +65,11 @@ body {
   height: 615px;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
 .intro {
   color: #FFFFFF;
   display: flex;
@@ -113,16 +117,15 @@ body {
 
 .galery {
   width: 1184px;
-  height: 442px;
   margin: 0 auto;
   margin-bottom: 92px;
 }
 
 .galery__images {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+  margin: 0 auto;
 }
 
 .galery__image {
@@ -133,6 +136,7 @@ body {
 .citys {
   margin-left: 145px;
   margin-right: 148px;
+  width: 987px;
 }
 
 .city {
@@ -283,24 +287,220 @@ body {
   line-height: 16px;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 768px) {
+
+  .header {
+    width: 720px;
+  }
+
   .header__image {
     width: 100%;
   }
 
-  .galery__images {
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-   
+
+  .intro {
+    margin-left: 0;
+    width: 720px;
+  }
+
+  .galery__image {
+    width: 352px;
+    height: 264px;
   }
 
   .main {
+    padding: 0 24px;
+  }
 
+  .galery__images {
+    width: 720px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+
+  .citys {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .city {
+    width: 733px;
+    margin-bottom: 72px;
+  }
+
+  .city__name {
+    width: 340px;
+    max-height: 92px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .city__image {
+    width: 340px;
+    height: 340px;
+  }
+
+  .city__artist {
+    width: 352px;
+  }
+
+  .city__text {
+    width: 352px;
   }
 
   .about {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover ;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nav {
+    margin-bottom: 48.94px;
+  }
+
+  .nav__logo {
+    width: 23.77px;
+  }
+
+  .header {
+    width: 288px;
+    margin: 0 auto;
+  }
+
+  .header__title {
+    width: 288px;
+    height: 88px;
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 16px;
+  }
+
+  .header__subtitle {
+    width: 288px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .header__image {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    margin-bottom: 64px;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .intro {
+    width: 288px;
+    height: 878px;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .intro__blockquote {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .intro__figcaption {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .intro__text {
+    font-size: 16px;
+    line-height: 163%;
+  }
+
+  .galery {
+    width: 288px;
+  }
+
+  .galery__images {
+    width: 288px;
+    height: 1812px;
+    grid-template-columns: 1fr;
+  }
+
+  .galery__image {
+    width: 288px;
+    height: 216px;
+  }
+
+  .citys {
+    width: 288px;
+  }
+
+  .city {
+    width: 320px;
+    grid-template-areas:
+    "city__name"
+    "card__artist"
+    "city__image"
+    "citys__text"
+    "citys__text"
+    "citys__button"
+    ;
+   }
+
+   .city__name {
+    font-size: 32px;
+    line-height: 35px;
+    height: 35px;
+   }
+
+   .city__artist {
+    font-size: 12px;
+    margin-bottom: 8px;
+   }
+
+   .city__artist-name {
+    font-size: 18px;
+    line-height: 22px;
+   }
+
+   .city__image {
+    width: 320px;
+    height: 320px;
+    padding: 0;
+  }
+
+  .city__text {
+    width: 288px;
+    font-size: 16px;
+    line-height: 26.08px;
+  }
+
+  .city__button {
+    font-size: 14px;
+    width: 288px;
+    height: 48px;
+  }
+
+  .about {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    height: 254px;
+  }
+
+  .about__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .about__list {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
