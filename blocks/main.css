@@ -81,8 +81,7 @@
   "city__name                 card__artist"
   "city__image                city__text-container"
   "city__button-container     city__text-container"
-  "span                       city__text-container"
-  ;
+  "span                       city__text-container";
 }
 
 .city__name {
@@ -269,7 +268,7 @@
   .about {
     width: 100%;
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
   }
 }
 
@@ -335,8 +334,7 @@
     "city__image"
     "citys__text"
     "citys__text"
-    "citys__button"
-    ;
+    "citys__button";
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -383,7 +381,7 @@
   .about {
     width: 100%;
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
     height: 254px;
     margin: unset;
   }
