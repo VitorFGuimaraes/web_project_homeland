@@ -110,6 +110,10 @@
   grid-area: card__artist;
 }
 
+.span-accent {
+  display: block;
+}
+
 .city__artist {
   font-family: "Inter Regular";
   font-size: 12px;
