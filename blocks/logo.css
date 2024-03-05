@@ -1,0 +1,26 @@
+.logo__image {
+  width: 30px;
+  height: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 34px;
+  margin-bottom: 90px;
+}
+
+.logo__title {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    margin-bottom: 48.94px;
+  }
+
+  .logo__image {
+    width: 23.77px;
+  }
+}

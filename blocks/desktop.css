@@ -1,0 +1,80 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+@import url(../blocks/page.css);
+@import url(../blocks/logo.css);
+@import url(../blocks/header.css);
+@import url(../blocks/main.css);
+@import url(../blocks/footer.css);
+
+@media screen and (max-width: 1024px) {
+
+  .header__image {
+    width: 100%;
+  }
+
+  .intro {
+    margin-left: 0;
+    width: 720px;
+    padding: 24px;
+  }
+
+  .galery {
+    padding: 24px;
+  }
+
+  .galery__image {
+    width: 352px;
+    height: 264px;
+  }
+
+  .galery__images {
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+
+  .city {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 24px;
+    }
+
+  .city__card {
+    width: 720px;
+    margin-bottom: 72px;
+    column-gap: 26px;
+  }
+
+  .city__name {
+    width: 340px;
+    max-height: 92px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .city__image {
+    width: 340px;
+    height: 340px;
+  }
+
+  .city__artist {
+    width: 352px;
+  }
+
+  .city__text-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 352px;
+  }
+
+  .city__text {
+    line-height: 26.08px;
+    font-size: 16px;
+    max-width: 352px;
+  }
+
+  .about {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover ;
+  }
+}

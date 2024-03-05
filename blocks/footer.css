@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copyright {
+  margin-top: 92px;
+  color: white;
+  font-family: "Inter Regular";
+  font-size: 14px;
+  line-height: 16px;
+}
+
