@@ -78,7 +78,7 @@
   column-gap: 40px;
   margin-bottom: 80px;
   grid-template-areas:
-  "city__name                 card__artist"
+  "city__name                 city__artist-container"
   "city__image                city__text-container"
   "city__button-container     city__text-container"
   "span                       city__text-container";
@@ -103,11 +103,11 @@
   grid-area: city__image;
 }
 
-.card__artist {
+.city__artist-container {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  grid-area: card__artist;
+  grid-area: city__artist-container;
 }
 
 .span-accent {
