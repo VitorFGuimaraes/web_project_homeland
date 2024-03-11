@@ -155,7 +155,12 @@
 }
 
 .city__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #0278FE;
+  text-decoration: none;
+  text-align: center;
   color: #FFFFFF;
   font-family: "Inter SemiBold";
   font-size: 18px;
@@ -163,6 +168,11 @@
   height: 48px;
   width: 285px;
   border: none;
+}
+
+.city__button:hover {
+  background-color: #0063D2;
+  
 }
 
 .about {
